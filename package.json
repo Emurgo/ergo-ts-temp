@@ -1,0 +1,117 @@
+{
+  "_args": [
+    [
+      "@coinbarn/ergo-ts@0.3.0",
+      "/home/sebdev/Documents/git/yoroi-frontend"
+    ]
+  ],
+  "_from": "@coinbarn/ergo-ts@0.3.0",
+  "_id": "@coinbarn/ergo-ts@0.3.0",
+  "_inBundle": false,
+  "_integrity": "sha512-AacoG+j7k4I542cC2zQtYZm2X2LVT2QGIOg08muhdsvrppnf5Jhgta3JNGlryZKkGAkBrR8w5SkVfubaZCRdBw==",
+  "_location": "/@coinbarn/ergo-ts",
+  "_phantomChildren": {
+    "follow-redirects": "1.5.10"
+  },
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@coinbarn/ergo-ts@0.3.0",
+    "name": "@coinbarn/ergo-ts",
+    "escapedName": "@coinbarn%2fergo-ts",
+    "scope": "@coinbarn",
+    "rawSpec": "0.3.0",
+    "saveSpec": null,
+    "fetchSpec": "0.3.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@coinbarn/ergo-ts/-/ergo-ts-0.3.0.tgz",
+  "_spec": "0.3.0",
+  "_where": "/home/sebdev/Documents/git/yoroi-frontend",
+  "author": {
+    "name": "Coinbarn"
+  },
+  "bugs": {
+    "url": "https://github.com/coinbarn/ergo-ts/issues"
+  },
+  "dependencies": {
+    "@root/encoding": "^1.0.1",
+    "array.prototype.flat": "^1.2.2",
+    "axios": "0.19.0",
+    "blakejs": "^1.1.0",
+    "bn.js": "^4.11.8",
+    "bs58": "^4.0.1",
+    "elliptic": "^6.4.1",
+    "secure-random": "1.1.2"
+  },
+  "description": "The library for Ergo platform written in TypeScript and compiled to JavaScript",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/plugin-proposal-pipeline-operator": "^7.3.2",
+    "@babel/plugin-transform-async-to-generator": "^7.4.4",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@types/jest": "^24.0.22",
+    "@types/node": "^12.12.18",
+    "@typescript-eslint/eslint-plugin": "^2.7.0",
+    "@typescript-eslint/parser": "^2.7.0",
+    "axios-mock-adapter": "^1.16.0",
+    "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
+    "codecov": "^3.5.0",
+    "core-js": "^3.1.4",
+    "eslint": "^6.6.0",
+    "jest": "^24.9.0",
+    "node-loader": "^0.6.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^24.1.0",
+    "ts-loader": "^6.2.1",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.2"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "homepage": "https://github.com/coinbarn/ergo-ts",
+  "keywords": [
+    "ergo",
+    "blockchain",
+    "cryptocurrency"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "majestic": {
+    "jestScriptPath": "../node_modules/jest/bin/jest.js",
+    "args": [
+      "--config=./jest.config.js"
+    ],
+    "env": {
+      "CI": "true"
+    }
+  },
+  "name": "@coinbarn/ergo-ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coinbarn/ergo-ts.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json --fix",
+    "postversion": "git push origin master && git push --tags",
+    "prepare": "yarn build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "publishPublic": "yarn build && npm publish --access public",
+    "test": "jest",
+    "version": "npm run format && git add -A src"
+  },
+  "types": "dist/index.d.ts",
+  "version": "0.3.0"
+}

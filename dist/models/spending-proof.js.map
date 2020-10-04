@@ -1,0 +1,1 @@
+{"version":3,"file":"spending-proof.js","sourceRoot":"","sources":["../../src/models/spending-proof.ts"],"names":[],"mappings":";;AAAA,MAAa,aAAa;IAKxB,YAAY,UAAkB,EAAE,YAAiC,EAAE;QACjE,IAAI,CAAC,UAAU,GAAG,UAAU,CAAC;QAC7B,IAAI,CAAC,SAAS,GAAG,SAAS,CAAC;IAC7B,CAAC;;AARH,sCASC;AARwB,mBAAK,GAAkB,IAAI,aAAa,CAAC,EAAE,EAAE,EAAE,CAAC,CAAC"}
